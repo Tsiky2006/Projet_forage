@@ -97,3 +97,134 @@
    - recherche
    - détail
    - changement de statut
+
+Demande manana statu(many to many) => misy table d'association
+devis tsisy statu fa rattacher à demande ny statu
+details => libélle(type), quantité, prix unitaire
+ Demande misy onclick, de na onblur (miretourne ajax)
+ De aveo alefa any am BAck de alaina any information 
+ any le demande client, date,lieu , Table devis id, 
+ idDemande FOreinkey,createAt, observation,idtype(Etudiant,FOrage)
+ le montant doivent être automatique
+ table devis (tsy asiana montant)
+ libelle , quantité, Prix unitaire
+
+ demande statu (insertion)
+ devis insertion (insertion)
+ De rehefa créé devis de misy details devis crée ho azy
+ De rehefa mi crée demande de misy statu demande 
+ crée ho azy misy lige miforina
+
+
+
+
+ 1. Dashboard
++------------------------------------------------------+
+| PROJET FORAGE                                        |
++------------------------------------------------------+
+
+[ Total demandes : 10 ]
+[ Demandes créées : 4 ]
+[ Devis créés : 3 ]
+[ Études en cours : 2 ]
+[ Clôturées : 1 ]
+
+[ Nouvelle demande ]     [ Liste des demandes ]
+2. Création d’une demande
++------------------------------------------------------+
+| NOUVELLE DEMANDE DE FORAGE                           |
++------------------------------------------------------+
+
+Référence demande : [ DEM-2026-0001 ]  automatique
+
+Nom demandeur     : [ __________________________ ]
+Lieu du forage    : [ __________________________ ]
+Fokontany         : [ __________________________ ]
+District          : [ __________________________ ]
+Région            : [ __________________________ ]
+
+Date demande      : [ 12/05/2026 10:45 ] automatique
+
+                 [ Enregistrer la demande ]
+
+Après clic, le système crée automatiquement :
+
+Statut : Demande créée
+3. Liste des demandes
++---------------------------------------------------------------------+
+| LISTE DES DEMANDES                                                  |
++---------------------------------------------------------------------+
+
+[ + Nouvelle demande ]
+
++------------+----------------+----------------+-------------+---------------+
+| Référence  | Demandeur      | Lieu forage    | Région      | Statut actuel |
++------------+----------------+----------------+-------------+---------------+
+| DEM-0001   | Rakoto Jean    | Ambohidratrimo | Analamanga  | Demande créée |
+| DEM-0002   | Assoc. Miarina | Mahajanga      | Boeny       | Devis créé    |
++------------+----------------+----------------+-------------+---------------+
+
+Actions :
+[ Voir détail ] [ Créer devis ] [ Modifier statut ]
+4. Détail d’une demande
++------------------------------------------------------+
+| DÉTAIL DEMANDE : DEM-2026-0001                       |
++------------------------------------------------------+
+
+Nom demandeur : Rakoto Jean
+Lieu forage   : Ambohidratrimo
+Fokontany     : Ambodimita
+District      : Antananarivo Avaradrano
+Région        : Analamanga
+Date demande  : 12/05/2026 10:45
+
+Statut actuel : Demande créée
+
+Actions :
+[ Créer devis ] [ Passer en étude ] [ Suspendre ] [ Clôturer ]
+5. Création du devis
++------------------------------------------------------+
+| CRÉATION DU DEVIS                                    |
++------------------------------------------------------+
+
+Demande liée : DEM-2026-0001
+Demandeur    : Rakoto Jean
+Lieu         : Ambohidratrimo
+Date demande : 12/05/2026 10:45
+
+Type devis   : [ Forage ▼ ]
+
+Observation :
+[ ______________________________________________ ]
+
+Détails du devis :
+
++-----------------------+----------+---------------+-------------+
+| Libellé               | Quantité | Prix unitaire | Sous-total  |
++-----------------------+----------+---------------+-------------+
+| [ Pompe manuelle ]    | [ 1 ]    | [ 450000 ]    | 450000      |
+| [ Tuyau PVC ]         | [ 5 ]    | [ 20000 ]     | 100000      |
++-----------------------+----------+---------------+-------------+
+
+[ + Ajouter une ligne ]
+
+Montant total : 550000 Ar
+
+[ Enregistrer le devis ]
+
+Après enregistrement :
+
+Statut ajouté : Devis créé
+6. Historique des statuts
++------------------------------------------------------+
+| HISTORIQUE DES STATUTS                               |
++------------------------------------------------------+
+
++---------------------+------------------+
+| Date                | Statut           |
++---------------------+------------------+
+| 12/05/2026 10:45    | Demande créée    |
+| 12/05/2026 11:30    | Devis créé       |
+| 13/05/2026 09:00    | Étude en cours   |
++---------------------+------------------+
+

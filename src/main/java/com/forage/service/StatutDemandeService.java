@@ -6,4 +6,5 @@ import java.util.List;
 public interface StatutDemandeService {
     void ajouterStatut(StatutDemande statutDemande);
     List<StatutDemande> historique(Long demandeId);
+    StatutDemande dernierStatut(Long demandeId);
 }

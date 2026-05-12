@@ -1,0 +1,99 @@
+1. Créer le projet Maven : Projet_forage
+
+2. Créer la structure Spring MVC :
+   - controller
+   - model
+   - dao
+   - service
+   - config
+   - WEB-INF/views
+
+3. Configurer le projet :
+   - pom.xml
+   - web.xml
+   - WebConfig.java
+   - application.properties
+
+4. Créer la base de données
+
+5. Créer les 3 tables :
+   - demande
+   - statut
+   - statut_demande
+
+6. Insérer les statuts de base :
+   - Demande créée
+   - Devis en cours
+   - Étude en cours
+   - Forage suspendu
+   - Demande clôturée
+
+7. Créer les modèles Java :
+   - Demande.java
+   - Statut.java
+   - StatutDemande.java
+
+8. Créer les DAO :
+   - DemandeDao.java
+   - StatutDao.java
+   - StatutDemandeDao.java
+
+9. Créer les services :
+   - DemandeService.java
+   - StatutService.java
+   - StatutDemandeService.java
+
+10. Créer le controller :
+   - DemandeController.java
+
+11. Créer les interfaces JSP :
+   - dashboard.jsp
+   - demande-form.jsp
+   - demande-list.jsp
+   - demande-detail.jsp
+   - statut-historique.jsp
+
+12. Faire le formulaire de création de demande :
+   - référence automatique
+   - nom demandeur
+   - lieu forage
+   - fokontany
+   - district
+   - région
+   - date automatique
+
+13. À l’enregistrement :
+   - insérer la demande dans `demande`
+   - ajouter automatiquement le statut “Demande créée” dans `statut_demande`
+
+14. Faire la liste des demandes :
+   - référence
+   - demandeur
+   - lieu
+   - région
+   - statut actuel
+   - actions
+
+15. Ajouter la recherche :
+   - par référence
+   - par nom demandeur
+   - par lieu
+   - par statut
+
+16. Faire la page détail :
+   - informations de la demande
+   - statut actuel
+   - historique des statuts
+
+17. Ajouter les boutons de changement de statut :
+   - Passer en devis
+   - Passer en étude
+   - Suspendre
+   - Clôturer
+
+18. Tester :
+   - ajout demande
+   - liste demande
+   - recherche
+   - détail
+   - changement de statut
